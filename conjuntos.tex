@@ -1,0 +1,137 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[activeacute,spanish]{babel}
+\usepackage{amsmath} %matemáticas como align
+\usepackage[left=2cm,top=1cm,right=2cm,bottom=1cm,nohead,nofoot]{geometry}
+\usepackage{multicol}
+\usepackage{color}
+
+\setlength{\columnseprule}{0.5pt}
+\def\columnseprulecolor{\color{black}}
+\setlength{\columnsep}{1cm}
+
+\setlength{\parindent}{0pt} % Disable paragraph indentation
+\pagestyle{empty} % Disable headers and footers
+
+
+\begin{document}
+
+    \centerline{\Huge{\textbf{Conjuntos}}}
+    \centerline{\large{Formulario por Yael Arturo Chavoya Andalón}}
+
+    \section{Representación}
+    Si $A$ y $B$ son dos conjuntos, y $U$ es el conjunto universo, entonces:
+    
+    \begin{multicols}{2}
+        \begin{itemize}
+            \item \textbf{Unión:} $A \cup B$
+            \item \textbf{Intersección:} $A \cap B$
+            \item \textbf{Diferencia:} $A - B$
+            \item \textbf{Diferencia simétrica:} $A \triangle B$
+            \item \textbf{Complemento:} $A^C$ ó $A'$
+            \item \textbf{Subconjunto:} $A \subset B$
+            \item \textbf{Cardinalidad:} $|A|$ ó $\#A$ ó $Card |A|$
+            \item \textbf{Potencia:} $P(A)$
+        \end{itemize}
+    \end{multicols}
+
+    \section{Leyendas del Álgebra de conjuntos}
+
+    \begin{multicols}{2}
+
+        \textbf{Leyes idempotentes}
+        \begin{subequations}
+            \begin{align}
+                A \cup A = A\\
+                A \cap A = A
+            \end{align}
+        \end{subequations}
+
+        \textbf{Leyes asociativas}
+        \begin{subequations}
+            \begin{align}
+                (A \cup B) \cup C &= A \cup (B \cup C)\\
+                (A \cap B) \cap C &= A \cap (B \cap C)
+            \end{align}
+        \end{subequations}
+
+        \textbf{Leyes conmutativas}
+        \begin{subequations}
+            \begin{align}
+                A \cup B &= B \cup A\\
+                A \cap B &= B \cap B
+            \end{align}
+        \end{subequations}
+
+        \textbf{Leyes distributivas}
+        \begin{subequations}
+            \begin{align}
+                A \cup (B \cap C) &= (A \cup B) \cap (A \cup C)\\
+                A \cap (B \cup C) &= (A \cap B) \cup (A \cap C)
+            \end{align}
+        \end{subequations}
+
+        \textbf{Leyes de identidad y absorción}
+        \begin{subequations}
+            \begin{align}
+                A \cup \phi &= A\\
+                A \cap U &= A \\
+                A \cup U &= U\\
+                A \cap \phi &= \phi
+            \end{align}
+        \end{subequations}
+
+        \textbf{Ley involutiva}
+        \begin{align}
+            (A^C)^C &= A
+        \end{align}
+
+        \textbf{Leyes del complementario}
+        \begin{subequations}
+            \begin{align}
+                A \cup A^C &= U\\
+                A \cap A^C &= \phi \\
+                U^C &= \phi\\
+                \phi^C &= U
+            \end{align}
+        \end{subequations}
+        
+    \end{multicols}
+
+    \section{Principios de Conteo}
+
+    \subsection{Con conjuntos disjuntos}
+
+    Si $A$ y $B$ son dos conjuntos disjuntos, entonces:
+
+    \begin{equation}
+        | A \cup B | = | A | + | B |
+    \end{equation}
+
+    \subsection{Con conjuntos no disjuntos}
+
+    Si $A$ y $B$ son dos conjuntos cualesquiera, entonces:
+
+    \begin{equation}
+        | A \cup B | = | A | + | B | - | A \cap B |
+    \end{equation}
+
+    Observe que la última relación también se cumple cuando $A$ y $B$ son disjuntos, es decir, $A \cap B = \phi$, ya que $|\phi| = 0$.
+
+    \section{Propiedades de la diferencia de conjuntos}
+
+    Las propiedades siguientes, llamadas \textit{leyes de Morgan}, se cumplen para conjuntos $A$ y $B$ que son subconjuntos del conjunto universal $U$.
+
+    \centering{\textbf{Leyes de Morgan}}
+    \begin{subequations}
+        \begin{align}
+            (A \cup B)^C &= A^C \cap B^C\\
+            (A \cap B)^C &= A^C \cup B^C
+        \end{align}
+    \end{subequations}
+
+    
+
+
+\end{document}
