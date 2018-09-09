@@ -1,0 +1,166 @@
+\documentclass{formulario}
+
+\begin{document}
+
+\titulo{Estática}
+\subtitulo{Formulario por Yael Arturo Chavoya Andalón}
+
+\begin{multicols*}{2}
+
+    % ==========================================
+    \section{Trigonometría}
+    % ==========================================
+    
+    \eqn{Ley de senos}{
+        \frac{A}{\sin{\alpha}} = \frac{B}{\sin{\beta}} = \frac{C}{\sin{\gamma}}
+    }
+
+    \eqn{Ley de cosenos}{
+        C^2 = A^2 + B^2 - 2AB\cos{\gamma}
+    }
+
+    \eqn{Triángulos rectángulos}{
+        \sin{\theta} = \frac{co}{h} &&
+        \cos{\theta} = \frac{ca}{h} &&
+        \tan{\theta} = \frac{co}{ca} &&
+    }
+
+    % ==========================================
+    \section{Leyes de Mecánica}
+    % ==========================================
+
+    \eqn{Cantidad de movimiento}{
+        \vec{p} = m\vec{v}
+    }
+
+    \eqn{Segunda ley de Newton}{
+        \vec{F} = m\vec{a} = \frac{d\vec{p}}{dt} = \frac{dm}{dt}\vec{v} + m\frac{d\vec{v}}{dt}
+    }
+
+    \eqn{Ley de Gravitación Universal}{
+        \vec{F}_{21} = -G\frac{M_1m_2}{(r_{2/1})^2}\hat{r}_{2/1}
+    }
+
+    \eqn{Ley de Hooke}{
+        F = k \triangle x
+    }
+
+    \eqn{Arreglo de Resortes iguales}{
+        F = 2kd\left(1 - \frac{l_o}{\sqrt{l_o^2 + d^2}}\right)
+    }
+
+    % ==========================================
+    \section{Constantes}
+    % ==========================================
+
+    \eqn{Gravitación}{
+        G &= 6.673 x 10^{-11} \frac{Nm^2}{kg^2}
+    }
+    \eqn{Aceleración de la Tierra debido a la gravedad}{
+        g &= 9.81 \frac{m}{s^2}
+    }
+
+    % ==========================================
+    \section{Vectores 2D}
+    % ==========================================
+
+    \eqn{Magnitud y dirección}{
+        | \vec{F} | &= \sqrt{F_x^2 + F_y^2}&&
+        \tan{\theta_x} = \frac{F_y}{F_x}&&
+    }
+    
+    \eqn{Componentes}{
+        F_x = | \vec{F} | \cos{\theta_x}&&
+        F_y = | \vec{F} | \sin{\theta_x}&&
+    }
+
+    \eqn{Equilibrio}{
+        \Sigma F = 0 && \Sigma F_x = 0 && \Sigma F_y = 0&&
+    }
+
+    \columnbreak
+
+    % ==========================================
+    \section{Vectores 3D}
+    % ==========================================
+    
+    \eqn{Vector posición absoluta (forma cartesiana)}{
+        \vec{r}_A = \vec{A} = A_x\hat{i} + A_y\hat{j} + A_z\hat{k}
+    }
+
+    \eqn{Vector posición relativa}{
+        \vec{r}_{B/A} = (B_x - A_x)\hat{i} + (B_y - A_y)\hat{j} + (B_z - A_z)\hat{k}     
+    }
+
+    \eqn{Magnitud}{
+        |\vec{A}| = \sqrt{A_x^2 + A_y^2 + A_z^2} 
+    }
+
+    \eqn{Vector unitario}{
+        \hat{A} = \frac{\vec{A}}{|\vec{A}|} = \frac{A_x\hat{i} + A_y\hat{j} + A_z\hat{k}}{|\vec{A}|}
+    }
+
+    \eqn{Ángulos directores}{
+        \cos{\theta_x} = \frac{A_x}{|\vec{A}|} &&
+        \cos{\theta_y} = \frac{A_y}{|\vec{A}|} &&
+        \cos{\theta_z} = \frac{A_z}{|\vec{A}|} &&
+    }
+
+    \eqn{Forma de ángulo de elevación}{
+        &A_z = | \vec{A} | \sin{\varphi} &&
+        A_{xy} = | \vec{A} | \cos{\varphi}& \\
+        &A_x = A_{xy}\cos{\theta_{xy}} &&
+        A_y = A_{xy}\sin{\theta_{xy}}&
+    }
+
+    \eqn{Forma dos puntos}{
+        \vec{F}_{CD} = | \vec{F}_{CD} | \hat{r}_{D/C}
+    }
+
+    \eqn{Equilibrio}{
+        \Sigma F = 0 && \Sigma F_x = 0 && \Sigma F_y = 0 && \Sigma F_z = 0 
+    }
+
+    % ==========================================
+    \section{Álgebra vectorial}
+    % ==========================================
+
+    \eqn{Suma}{
+        \vec{A} + \vec{B} = (a_1 + b_1, a_2 + b_2, ... , a_N + b_N)
+    }
+
+    \eqn{Multiplicación escalar por un vector}{
+        \lambda\vec{A} = (\lambda a_1, \lambda a_2, ... , \lambda a_N)
+    }
+
+    \eqn{Producto escalar}{
+        \vec{A}\bullet\vec{B} = |\vec{A}||\vec{B}|\cos{\theta_{AB}} = A_xB_x + A_yB_y + A_zB_z
+    }
+
+    \eqn{Proyección de un vector a lo largo de otro}{
+        | Proy_{\vec{A}}\vec{B} | = \frac{\vec{A}\bullet\vec{B}}{|\vec{A}|}&&
+        Proy_{\vec{A}}\vec{B} = \frac{\vec{A}\bullet\vec{B}}{|\vec{A}|} \hat{A}&&
+    }
+
+    \eqn{Producto vectorial}{
+        \vec{A} \times \vec{B} = | \vec{A} | | \vec{B} | \sin{\theta_{AB}} \hat{n} =
+        \begin{bmatrix}
+            \hat{i} & \hat{j} & \hat{k} \\
+            A_x & A_y & A_z \\
+            B_x & B_y & B_z
+        \end{bmatrix}
+    }
+
+    \eqn{Triple producto escalar}{
+        \vec{A} \bullet \vec{B} \times \vec{C} = | \vec{A} | | \vec{B} \times \vec{C} | \cos{\varphi} =
+        \begin{bmatrix}
+            A_x & A_y & A_z \\
+            B_x & B_y & B_z \\
+            C_x & C_y & C_z
+        \end{bmatrix}
+    }
+
+    % ==========================================
+
+\end{multicols*}
+\end{document}
