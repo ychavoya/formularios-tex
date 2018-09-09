@@ -130,8 +130,28 @@
             (A \cap B)^C &= A^C \cup B^C
         \end{align}
     \end{subequations}
-
     
+    \raggedright{}
+
+    \section{Caso de la unión de tres conjuntos}
+    
+    El trabajo de conteo para los casos en los que intervienen tres conjuntos es tan sencillo como el trabajo con dos conjuntos. Observe que:
+
+    \begin{equation*}
+        | A \cup B \cup C | = | A \cup ( B \cup C ) | = | A | + | B \cup C | - | A \cap (B \cup C)
+    \end{equation*}
+    pero
+    \begin{equation*}
+        | B \cup C | = | B | + | C | - | B \cap C |
+    \end{equation*}
+    y
+    \begin{equation*}
+        | A \cup ( B \cup C ) | = |(A \cap B)| \cup |A \cap C| = | A \cap B | + |A \cap C| - |A \cap B \cap C |
+    \end{equation*}
+    por tanto
+    \begin{equation}
+        | A \cup B \cup C | = | A | + | B | + | C | - |B \cap C| - |A \cap B| - |A \cap C| + |A \cap B \cap C |
+    \end{equation}
 
 
 \end{document}
