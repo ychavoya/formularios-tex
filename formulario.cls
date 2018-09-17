@@ -39,6 +39,13 @@
     \end{flalign*}
 }
 
+\newcommand{\eqnnumber}[2]{
+    \subsection{#1}
+    \begin{flalign}
+        #2
+    \end{flalign}
+}
+
 \newcommand{\titulo}[1]{
     \centerline{\Large{\textbf{#1}}}
 }
