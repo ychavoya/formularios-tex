@@ -16,6 +16,7 @@ deploy:
   provider: releases
   api_key:
     secure: qbrRj4OOrcE/GapEj8t/Lr+zoVgZe8GDG9lP6SupliSJceNOXW+MDJfG/1ZQFQ+my8d8g+jzPMQ6tbEVJeRiaACEMtz56eELeFzYb42V/NFfU9DfeE72PzUYjRW5P2Qko+wn0rctziK5qh+EmmNyofXgPlChYAamiyRo4VP6z1atDycsh5+Dqxy5SabQpB/sPEMrOz/RznY9uk8zwdt7YXXx4WISRJA8iaVDZYCdrlG2qHIDw+uFTkROZ/ADQvpBoK+FVPtsiBIZ4yrFPjZAnlUHpsN1eKq5vrFNwiGtTJDTBFTx0VbHT4ErJiqDMhH96KzuO0ybDO/DZV4gjDj1xAa03ER0FESgY33m6cX6+iUIs8UD2j8sidX/NodG9rojPIZGzJWASZG4oRZqCbnt8WJkhYZAQLinXlanBoO+XrtgwiyQyiNka3DypENYm/S3rE/qi25683Ma/hE7Smzh6TLIROzrgaJos4U6mChKLP7MyTeqRTnf0DAzt+Aq4MRRYFn3izb02tP7mUq5NG7eZvVNGR8GErZYUtC3eWgs0KYy0nz0r0iV2w71/jmqzKVMfmcrhTByz+uJD1EzG5XDgvwFvZqhTXL9b0TTMB+IPZeyXqABvRCscQagq/f0Wg/ta8oYJoqwtJ0kPICRXcZ5bNxfJI38RkKl3z8DI/jbQuw=
+  file_glob: true
   file: _build/*.pdf
   skip_cleanup: true
   on:
