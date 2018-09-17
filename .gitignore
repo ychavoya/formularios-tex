@@ -4,3 +4,4 @@
 !*.tex
 !*.cls
 !assets/*
+!.travis.yml
