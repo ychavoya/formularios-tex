@@ -6,8 +6,7 @@ branches:
   - master
 
 before_install:
-- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended
-  texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended
+- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-full
 
 script:
 - mkdir _build
@@ -20,5 +19,4 @@ deploy:
   file: _build/*.pdf
   skip_cleanup: true
   on:
-    tags: true
     repo: Woomber/FormulariosTex
