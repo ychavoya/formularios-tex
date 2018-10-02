@@ -1,0 +1,99 @@
+\documentclass{formulario}
+
+\begin{document}
+
+\titulo{Cálculo Diferencial e Integral}
+
+\begin{multicols*}{2}
+
+    % ==========================================
+    \section{Cálculo Diferencial}
+    % ==========================================
+
+    \eqn{Derivada General}{
+        f'(x) = \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}&&
+    }
+
+    \eqn{Algebraicas}{
+        &Dc = 0 &&\\
+        &Dx = 1 \\
+        &Dcx = c \cdot x' = c\\
+        &Dcu = c \cdot u'\\
+        &Dx^n = nx^{n-1}\\
+        &Du^n = nu^{n-1} \cdot u'\\
+        &Du^v = vu^{v-1} \cdot u' + \ln u \cdot u^v \cdot v'\\
+        &Du^{-n} = - \frac{nu'}{u^{n+1}}\\
+        &D(u \pm v) = u' \pm v'\\
+        &D(u \cdot v) = u \cdot v' + v \cdot u'\\
+        &D(\frac{u}{v}) = \frac{v \cdot u' - u \cdot v'}{v^2}\\
+        &De^u = e^u \cdot u'\\
+        &Da^u = a^u \cdot u' \cdot \ln{a}\\
+        &D\ln{u} = \frac{u'}{u}\\
+        &D\log_a{u} = \frac{u'}{u \cdot \ln{a}}\\
+        &D\sqrt{u} = \frac{u'}{2\sqrt{u}}\\
+        &D\sqrt[n]{u} = \frac{u'}{n \sqrt[n]{u^{n-1}}}
+    }
+
+    \eqn{Trigonométricas}{
+        &D\sin{u} = \cos{u} \cdot u'&&\\
+        &D\cos{u} = -\sin{u} \cdot u'\\
+        &D\tan{u} = \sec^2{u} \cdot u'\\
+        &D\csc{u} = -\csc{u} \cdot \cot{u} \cdot u'\\
+        &D\sec{u} = \sec{u} \cdot \tan{u} \cdot u'\\
+        &D\cot{u} = -\csc^2{u} \cdot u'
+    }
+
+    \eqn{Trigonométricas Inversas}{
+        &D\arcsin{u} = \frac{u'}{\sqrt{1 - u^2}}&&\\
+        &D\arccos{u} = - \frac{u'}{\sqrt{1 - u^2}}\\
+        &D\arctan{u} = \frac{u'}{1 + u^2}\\
+        &D\arccsc{u} = - \frac{u'}{u\sqrt{u^2 - 1}}\\
+        &D\arcsec{u} = \frac{u'}{u\sqrt{u^2 - 1}}\\
+        &D\arccot{u} = - \frac{u'}{1 + u^2}
+    }
+
+    \columnbreak
+
+    % ==========================================
+    \section{Cálculo Integral}
+    % ==========================================
+    
+    \eqn{Integral definida}{
+        \int_a^b f(x) dx = \lim_{n \to \infty} \sum_{i = 1}^{n} f(x_i^*) \Delta x = f(b) - f(a)&&
+    }
+
+    \eqn{Fórmulas fundamentales}{
+        &\int du = u + C&&\\
+        &\int Kdu = K \int du = Ku + C\\
+        &\int (f \pm g)dx = \int f(x)dx \pm \int g(x)dx\\
+        &\int u^n du = \frac{u^{n+1}}{n+1} + C; n \ne -1\\
+        &\int u^{-1}du = \ln|u| + C\\
+        &\int e^u du = e^u + C
+    }
+
+    \eqn{Trigonométricas}{
+        &\int \sin u \cdot du = - \cos u + C&&\\
+        &\int \cos u \cdot du = \sin u + C\\
+        &\int \tan u \cdot du = \ln|\sec u| + C\\
+        &\int \cot u \cdot du = \ln|\sin u| + C\\
+        &\int \sec u \cdot du = \ln|\sec u + \tan u| + C\\
+        &\int \csc u \cdot du = \ln|\csc u - \cot u| + C\\
+        &\int \sec u \cdot \tan u \cdot du = \sec u + C\\
+        &\int \csc u \cdot \cot u \cdot du = - \csc u + C\\
+        &\int \sec^2 u \cdot du = \tan u + C\\
+        &\int \csc^2 u \cdot du = - \cot u + C
+    }
+
+    \eqn{Trigonométricas inversas}{
+        &\int \frac{du}{u^2 - a^2} = \frac{1}{2a}\ln \left| \frac{u - a}{u + a} \right| + C&&\\
+        &\int \frac{du}{u^2 + a^2} = \frac{1}{a} \arctan \frac{u}{a} + C\\
+        &\int \frac{du}{\sqrt{a^2 - u^2}} = \arcsen \frac{u}{a} + C\\
+        &\int \frac{du}{u\sqrt{u^2 - a^2}} = \frac{1}{a} \arcsec \frac{u}{a} + C\\
+        &\int \frac{du}{a^2 - u^2} = \frac{1}{2a}\ln \left| \frac{u + a}{u - a} \right| + C\\
+        &\int \frac{du}{\sqrt{u^2 \pm a^2}} = \ln \left( u + \sqrt{a^2 \pm u^2} \right) + C
+    }
+
+    % ==========================================
+  
+\end{multicols*}
+\end{document}

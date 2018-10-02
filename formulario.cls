@@ -53,3 +53,7 @@
 \newcommand{\subtitulo}[1]{
     \centerline{\normalsize{#1}}
 }
+
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\arccsc}{arccsc}
