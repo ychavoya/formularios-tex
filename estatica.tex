@@ -161,6 +161,38 @@
     }
 
     % ==========================================
+\end{multicols*}
 
+    \newpage
+    \titulo{Estática}
+    \subtitulo{Momentos de inercia y de fuerza}
+
+\begin{multicols*}{2}
+    % ==========================================
+    \section{Momento de fuerzas}
+    % ==========================================
+    \eqn{Momento de una fuerza}{
+        \vec{M}_Q^{\vec{F}_A} &= \vec{\tau} = \vec{r}_{A/Q} \times \vec{F}_A
+        = | F_A | | r_{A/Q} | \sin{\theta} \hat{n}
+    }
+
+    \eqn{Sistema fuerza par equivalente}{
+        \vec{M}_Q = (\Sigma \vec{r}_{i/Q} \times \vec{F}_i) + (\Sigma \vec{M}_{par_i})
+    }
+
+    \eqn{Llave de torsión}{
+        \Sigma\vec{M}_{\perp \vec{F}_Q} &= \vec{r}_{Q'/Q} \times \Sigma\vec{F}_Q 
+        = \Sigma\vec{M}_Q - \vec{M}_{\parallel \vec{F}_Q} \\
+        \Sigma\vec{M}_{\parallel\vec{F}_Q} &= \left( \frac{
+            \Sigma\vec{F}_Q \bullet \Sigma\vec{M}_Q
+        }{|\Sigma\vec{F}_Q|^2} \right) \Sigma\vec{F}_Q
+    }
+
+    \eqn{Momento respecto a un eje}{
+        M^{\vec{F}_A}_{Q\parallel QP} &= \hat{r}_{P/Q} \bullet \vec{M}_Q^{\vec{F}_A}
+        = \hat{r}_{P/Q} \bullet \vec{r}_{A/Q} \times \vec{F}_A \\
+        \vec{M}^{\vec{F}_A}_{Q\parallel QP} &= |  M^{\vec{F}_A}_{Q\parallel QP} | \hat{r}_{Q/P}
+    }
+ 
 \end{multicols*}
 \end{document}
