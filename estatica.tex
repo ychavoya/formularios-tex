@@ -3,30 +3,12 @@
 \begin{document}
 
 \titulo{Estática}
-\subtitulo{Mecánica, Vectores, Fuerzas, Equilibrio}
+
 
 \begin{multicols*}{2}
 
     % ==========================================
-    \section{Trigonometría}
-    % ==========================================
-    
-    \eqn{Ley de senos}{
-        \frac{A}{\sin{\alpha}} = \frac{B}{\sin{\beta}} = \frac{C}{\sin{\gamma}}
-    }
-
-    \eqn{Ley de cosenos}{
-        C^2 = A^2 + B^2 - 2AB\cos{\gamma}
-    }
-
-    \eqn{Triángulos rectángulos}{
-        \sin{\theta} = \frac{co}{h} &&
-        \cos{\theta} = \frac{ca}{h} &&
-        \tan{\theta} = \frac{co}{ca} &&
-    }
-
-    % ==========================================
-    \section{Leyes de Mecánica}
+    \section{Mecánica}
     % ==========================================
 
     \eqn{Cantidad de movimiento}{
@@ -37,28 +19,54 @@
         \vec{F} = m\vec{a} = \frac{d\vec{p}}{dt} = \frac{dm}{dt}\vec{v} + m\frac{d\vec{v}}{dt}
     }
 
-    \eqn{Ley de Gravitación Universal}{
-        \vec{F}_{21} = -G\frac{M_1m_2}{(r_{2/1})^2}\hat{r}_{2/1}
-    }
-
     \eqn{Ley de Hooke}{
-        F = k \triangle x
+        F = k \triangle x = k(l - l_o)
     }
 
-    \eqn{Arreglo de Resortes iguales}{
-        F = 2kd\left(1 - \frac{l_o}{\sqrt{l_o^2 + d^2}}\right)
-    }
+    \eqn{Ventaja mecánica}{ Ventaja = \frac{Q}{P} }
+
+    \eqn{Eficiencia}{ \frac{Salida}{Entrada} \times 100\% }
 
     % ==========================================
-    \section{Constantes}
+    \section{Álgebra vectorial}
     % ==========================================
 
-    \eqn{Gravitación}{
-        G &= 6.673 x 10^{-11} \frac{Nm^2}{kg^2}
+    \eqn{Suma}{
+        \vec{A} + \vec{B} = (a_1 + b_1, a_2 + b_2, ... , a_N + b_N)
     }
-    \eqn{Aceleración de la Tierra debido a la gravedad}{
-        g &= 9.81 \frac{m}{s^2}
+
+    \eqn{Multiplicación escalar por un vector}{
+        \lambda\vec{A} = (\lambda a_1, \lambda a_2, ... , \lambda a_N)
     }
+
+    \eqn{Producto escalar}{
+        \vec{A}\bullet\vec{B} = |\vec{A}||\vec{B}|\cos{\theta_{AB}} = A_xB_x + A_yB_y + A_zB_z
+    }
+
+    \eqn{Proyección de un vector a lo largo de otro}{
+        | Proy_{\vec{A}}\vec{B} | = \frac{\vec{A}\bullet\vec{B}}{|\vec{A}|}&&
+        Proy_{\vec{A}}\vec{B} = \frac{\vec{A}\bullet\vec{B}}{|\vec{A}|} \hat{A}&&
+    }
+
+    \eqn{Producto vectorial}{
+        \vec{A} \times \vec{B} = | \vec{A} | | \vec{B} | \sin{\theta_{AB}} \hat{n} =
+        \begin{bmatrix}
+            \hat{i} & \hat{j} & \hat{k} \\
+            A_x & A_y & A_z \\
+            B_x & B_y & B_z
+        \end{bmatrix}
+    }
+
+    \eqn{Triple producto escalar}{
+        \vec{A} \bullet \vec{B} \times \vec{C} = | \vec{A} | | \vec{B} \times \vec{C} | \cos{\varphi} =
+        \begin{bmatrix}
+            A_x & A_y & A_z \\
+            B_x & B_y & B_z \\
+            C_x & C_y & C_z
+        \end{bmatrix}
+    }
+
+    \columnbreak
 
     % ==========================================
     \section{Vectores 2D}
@@ -77,8 +85,6 @@
     \eqn{Equilibrio}{
         \Sigma F = 0 && \Sigma F_x = 0 && \Sigma F_y = 0&&
     }
-
-    \columnbreak
 
     % ==========================================
     \section{Vectores 3D}
@@ -122,50 +128,32 @@
     }
 
     % ==========================================
-    \section{Álgebra vectorial}
+    \section{Fricción}
     % ==========================================
 
-    \eqn{Suma}{
-        \vec{A} + \vec{B} = (a_1 + b_1, a_2 + b_2, ... , a_N + b_N)
+    \eqn{Fricción disponible}{
+        f_d = \mu N
     }
 
-    \eqn{Multiplicación escalar por un vector}{
-        \lambda\vec{A} = (\lambda a_1, \lambda a_2, ... , \lambda a_N)
+    \eqn{Fricción necesaria (inclinación respecto a superficie)}{
+        \mu = \cot{\theta}
     }
 
-    \eqn{Producto escalar}{
-        \vec{A}\bullet\vec{B} = |\vec{A}||\vec{B}|\cos{\theta_{AB}} = A_xB_x + A_yB_y + A_zB_z
+    \eqn{Bandas planas}{
+        ln\frac{T_2}{T_1} &= \mu \beta \\
+        T_2 &= T_1 e^{\mu \beta}
+    }
+                    
+    \eqn{Torque motriz}{
+        M = (T_2 - T_1) r
     }
 
-    \eqn{Proyección de un vector a lo largo de otro}{
-        | Proy_{\vec{A}}\vec{B} | = \frac{\vec{A}\bullet\vec{B}}{|\vec{A}|}&&
-        Proy_{\vec{A}}\vec{B} = \frac{\vec{A}\bullet\vec{B}}{|\vec{A}|} \hat{A}&&
-    }
-
-    \eqn{Producto vectorial}{
-        \vec{A} \times \vec{B} = | \vec{A} | | \vec{B} | \sin{\theta_{AB}} \hat{n} =
-        \begin{bmatrix}
-            \hat{i} & \hat{j} & \hat{k} \\
-            A_x & A_y & A_z \\
-            B_x & B_y & B_z
-        \end{bmatrix}
-    }
-
-    \eqn{Triple producto escalar}{
-        \vec{A} \bullet \vec{B} \times \vec{C} = | \vec{A} | | \vec{B} \times \vec{C} | \cos{\varphi} =
-        \begin{bmatrix}
-            A_x & A_y & A_z \\
-            B_x & B_y & B_z \\
-            C_x & C_y & C_z
-        \end{bmatrix}
-    }
 
     % ==========================================
 \end{multicols*}
 
     \newpage
     \titulo{Estática}
-    \subtitulo{Momentos de fuerza y fricción}
 
 \begin{multicols*}{2}
 
@@ -193,11 +181,6 @@
     \eqn{Momento de inercia fuera del eje}{
         I' = I_{CM} + Md^2
     }
-
-    \eqn{Momento de segundo orden}{
-        I_x &= \int y^2 dA \\
-        I_z &= I_y + I_x
-    }
     
     % ==========================================
     \section{Momento de fuerzas}
@@ -221,43 +204,11 @@
     }
 
     \eqn{Momento respecto a un eje}{
-        M^{\vec{F}_A}_{Q\parallel QP} &= \hat{r}_{P/Q} \bullet \vec{M}_Q^{\vec{F}_A}
+        \left| M^{\vec{F}_A}_{Q\parallel QP} \right| &= \hat{r}_{P/Q} \bullet \vec{M}_Q^{\vec{F}_A}
         = \hat{r}_{P/Q} \bullet \vec{r}_{A/Q} \times \vec{F}_A \\
-        \vec{M}^{\vec{F}_A}_{Q\parallel QP} &= |  M^{\vec{F}_A}_{Q\parallel QP} | \hat{r}_{Q/P}
+        \vec{M}^{\vec{F}_A}_{Q\parallel QP} &= \left|  M^{\vec{F}_A}_{Q\parallel QP} \right| \hat{r}_{Q/P}
     }
     
-    \columnbreak
-    
-    % ==========================================
-    \section{Máquinas}
-    % ==========================================
-
-    \eqn{Ventaja mecánica}{ Ventaja = \frac{Q}{P} }
-
-    \eqn{Eficiencia}{ \frac{Salida}{Entrada} \times 100\% }
-
-
-    % ==========================================
-    \section{Fricción}
-    % ==========================================
-
-    \eqn{Fricción disponible}{
-        f_d = \mu N
-    }
-
-    \eqn{Fricción necesaria (inclinación respecto a superficie)}{
-        \mu = \cot{\theta}
-    }
-
-    \eqn{Bandas planas}{
-        ln\frac{T_2}{T_1} &= \mu \beta \\
-        T_2 &= T_1 e^{\mu \beta}
-    }
-                  
-    \eqn{Torque motriz}{
-        M = (T_2 - T_1) r
-    }
-   
     % ==========================================
     \section{Centroides}
     % ==========================================
@@ -280,23 +231,7 @@
         \bar{y} = \frac{1}{3} h
     }
 
-    \eqn{Centroide en segmento de círculo}{
-        \bar{y} = \frac{4nr}{3\pi}\left| \cos{\left( \frac{(n+1)\pi}{2n} \right)} \right|
-    }
-
-    \eqn{Centroide en segmento de arco}{
-        \bar{y} = \frac{2r \sin{\frac{\theta}{2}}}{\theta}
-    }
-
-    % ==========================================
-
-\end{multicols*}
-
-    \newpage
-    \titulo{Estática}
-    \subtitulo{Momentos de inercia}
-
-\begin{multicols*}{2}
+    \columnbreak
 
     % ==========================================
     \section{Momentos de inercia}
@@ -322,7 +257,9 @@
     \eqn{Anillo delgado a través del diámetro}{ I = \frac{1}{2} Mr^2 }
     \eqn{Anillo ancho a través del diámetro}{ I = \frac{1}{2} Mr^2 + \frac{1}{12} Mw^2 }
 
+
     % ==========================================
 
 \end{multicols*}
+
 \end{document}
